@@ -1,0 +1,17 @@
+//DECIMAL TO BINARY
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sa=new Scanner(System.in);
+        int a=sa.nextInt();
+        int rem;
+        String binary="";
+        while (a!=0)
+        {
+            rem=a%2;
+            binary=rem+binary;
+            a=a/2;
+        }
+       System.out.print(binary) ;
+    }
+}
