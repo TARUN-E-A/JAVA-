@@ -1,0 +1,21 @@
+### binary to decimal
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sa = new Scanner(System.in);
+        long binary = sa.nextLong(); // Read binary input
+        long decimal = 0;
+        int i = 0; // Start power from 0
+        
+        while (binary != 0) {
+            long rem = binary % 10; // Get last digit
+            decimal += rem * Math.pow(2, i); // Convert to decimal
+            binary /= 10; // Remove last digit
+            i++; // Increase power
+        }
+        
+        System.out.println(decimal); // Print the decimal equivalent
+        sa.close();
+    }
+}
