@@ -1,0 +1,9 @@
+public class CarAnimation {
+    public static void main(String[] args) throws InterruptedException {
+        String car = "snake"; // Car with motion effect
+        for (int i = 0; i < 50; i++) { 
+            System.out.print("\r" +" ".repeat(i) + car); // Move car right
+            Thread.sleep(150); // Delay for animation effect
+        }
+    }
+}
